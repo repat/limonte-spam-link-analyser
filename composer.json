@@ -1,0 +1,38 @@
+{
+  "name": "limonte/spam-link-analyser",
+  "description": "Check probability of link is spam",
+  "keywords": [
+    "spam checker",
+    "malware detector",
+    "phishing checker",
+    "scam detector",
+    "spam-checker",
+    "spam-link",
+    "spam-link-checker",
+    "link-checker"
+  ],
+  "homepage": "https://github.com/limonte/spam-link-analyser",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Limon Monte",
+      "email": "limon.monte@gmail.com"
+    }
+  ],
+  "require-dev": {
+    "phpunit/phpunit": "~5.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Limonte\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Limonte\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "phpunit"
+  }
+}
