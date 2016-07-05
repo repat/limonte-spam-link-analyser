@@ -19,6 +19,9 @@
       "email": "limon.monte@gmail.com"
     }
   ],
+  "require": {
+    "ext-curl": "*"
+  },
   "require-dev": {
     "phpunit/phpunit": "~5.2"
   },
