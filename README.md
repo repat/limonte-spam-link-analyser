@@ -1,4 +1,4 @@
-[![Build Status](https://scrutinizer-ci.com/g/limonte/spam-link-analyser/badges/build.png?b=master)](https://scrutinizer-ci.com/g/limonte/spam-link-analyser/build-status/master)
+[![Build Status](https://semaphoreci.com/api/v1/limonte/spam-link-analyser/branches/master/badge.svg)](https://semaphoreci.com/limonte/spam-link-analyser)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/limonte/spam-link-analyser/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/limonte/spam-link-analyser/?branch=master)
 [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](LICENSE)
 
