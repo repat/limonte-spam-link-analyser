@@ -25,9 +25,16 @@ class SpamLinkAnalyserTest extends \PHPUnit_Framework_TestCase
 
     public function testGoogleBotDifferentRedirect()
     {
+        // headers redirect
         $this->assertEquals(
             SpamLinkAnalyser::GOOGLE_BOT_DIFFERENT_REDIRECT,
             $this->checker->check('http://9nl.pw/e25y')
+        );
+
+        // meta refresh redirect
+        $this->assertEquals(
+            SpamLinkAnalyser::GOOGLE_BOT_DIFFERENT_REDIRECT,
+            $this->checker->check('http://fyhjs.voluumtrk.com/e4d6bfe2-78c7-4e0b-9999-32723287cf81')
         );
     }
 

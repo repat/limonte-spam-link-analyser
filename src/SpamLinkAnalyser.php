@@ -1,6 +1,8 @@
 <?php
 namespace Limonte;
 
+use PHPHtmlParser\Dom;
+
 class SpamLinkAnalyser
 {
     const OK = 0;
@@ -68,6 +70,23 @@ class SpamLinkAnalyser
 
         if (trim($url, '/') === trim($redurectUrl, '/')) {
             $redurectUrl = '';
+        }
+
+        // look for meta http-equiv="refresh"
+        if (!$redurectUrl) {
+            $dom = new Dom;
+            $dom->load($url);
+            $metaTags = $dom->find('meta');
+            foreach ($metaTags as $meta) {
+                if ($meta->getAttribute('http-equiv') === 'refresh') {
+                    $redurectUrl = preg_replace(
+                        '/\s*\d+\s*;\s*url\s*=\s*(\'|\")(.+)(\'|\")/i',
+                        '$2',
+                        $meta->getAttribute('content')
+                    );
+                    break;
+                }
+            }
         }
 
         return $redurectUrl;
