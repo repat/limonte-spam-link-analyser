@@ -1,12 +1,12 @@
-[![Build Status](https://semaphoreci.com/api/v1/limonte/spam-link-analyser/branches/master/badge.svg)](https://semaphoreci.com/limonte/spam-link-analyser)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/limonte/spam-link-analyser/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/limonte/spam-link-analyser/?branch=master)
-
 # PHP library to check if link is spam
+
+[![Build Status](https://travis-ci.org/limonte/spam-link-analyser.svg?branch=master)](https://travis-ci.org/limonte/spam-link-analyser)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/limonte/spam-link-analyser/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/limonte/spam-link-analyser/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/limonte/spam-link-analyser/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/limonte/spam-link-analyser/?branch=master)
 
 ## Usage:
 
 ```php
-
 $spamLinkAnalyser = new Limonte\SpamLinkAnalyser;
 
 $status = $spamLinkAnalyser->check($url);
