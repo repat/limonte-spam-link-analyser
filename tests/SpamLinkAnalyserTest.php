@@ -1,7 +1,7 @@
 <?php
 namespace Limonte\Tests;
 
-use Limonte\SpamLinkAnalyser as SpamLinkAnalyser;
+use Limonte\SpamLinkAnalyser;
 
 class SpamLinkAnalyserTest extends \PHPUnit_Framework_TestCase
 {
@@ -51,5 +51,13 @@ class SpamLinkAnalyserTest extends \PHPUnit_Framework_TestCase
             SpamLinkAnalyser::TOO_MUCH_REDIRECTS,
             $this->checker->check('http://bit.ly/1Un6o2q')
         );
+    }
+
+    /**
+     * @expectedException Exception
+     */
+    public function testInvalidUrl()
+    {
+        $this->checker->check('invalid URL');
     }
 }
