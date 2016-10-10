@@ -1,7 +1,7 @@
 build:
     environment:
         php:
-            version: 7.0
+            version: 7.0.8
 checks:
     php:
         code_rating: true
@@ -21,7 +21,7 @@ checks:
 filter:
     excluded_paths: [tests/*, vendor/*]
 tools:
-    php_code_coverage: true
+    external_code_coverage: true
     php_code_sniffer:
         config:
             standard: PSR2
