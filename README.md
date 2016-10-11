@@ -25,3 +25,8 @@ if ($status === SpamLinkAnalyser::TOO_MUCH_REDIRECTS) {
     // link has 3 or more redirects
 }
 ```
+## Related libraries:
+
+- Google Safebrowsing PHP library: [limonte/google-safebrowsing](https://github.com/limonte/google-safebrowsing)
+- McAfee SiteAdvisor PHP library: [limonte/mcafee-siteadvisor](https://github.com/limonte/mcafee-siteadvisor)
+- PHP parser for Adblock Plus filters: [limonte/php-adblock-parser](https://github.com/limonte/php-adblock-parser)
