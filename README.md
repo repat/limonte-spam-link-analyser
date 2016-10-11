@@ -25,6 +25,7 @@ if ($status === SpamLinkAnalyser::TOO_MUCH_REDIRECTS) {
     // link has 3 or more redirects
 }
 ```
+
 ## Related libraries:
 
 - Google Safebrowsing PHP library: [limonte/google-safebrowsing](https://github.com/limonte/google-safebrowsing)
