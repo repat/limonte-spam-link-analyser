@@ -10,7 +10,7 @@ class SpamLinkAnalyser
     const TOO_MUCH_REDIRECTS = 102;
 
     const GOOGLE_BOT_USER_AGENT = 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)';
-    const GOOGLE_CHROME_USER_AGENT = 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36';
+    const GOOGLE_CHROME_USER_AGENT = 'Mozilla/5.0 AppleWebKit/537.36 (like Gecko) Chrome/55.0.2883.75 Safari/537.36';
 
     private $whitelist;
 
@@ -28,6 +28,7 @@ class SpamLinkAnalyser
      */
     public function check($url)
     {
+        $url = trim($url);
         if (filter_var($url, FILTER_VALIDATE_URL) === false) {
             throw new \Exception("Invalid URL");
         }
