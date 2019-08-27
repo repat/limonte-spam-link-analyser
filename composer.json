@@ -1,5 +1,5 @@
 {
-  "name": "limonte/spam-link-analyser",
+  "name": "repat/limonte-spam-link-analyser",
   "description": "Check probability of link is spam",
   "keywords": [
     "spam checker",
@@ -11,17 +11,22 @@
     "spam-link-checker",
     "link-checker"
   ],
-  "homepage": "https://github.com/limonte/spam-link-analyser",
+  "homepage": "https://github.com/repat/limonte-spam-link-analyser",
   "license": "MIT",
+  "version": "v0.2",
   "authors": [
     {
       "name": "Limon Monte",
       "email": "limon.monte@gmail.com"
+    },
+    {
+      "name": "Repat",
+      "email": "repat@repat.de"
     }
   ],
   "require": {
     "ext-curl": "*",
-    "paquettg/php-html-parser": "^1.7"
+    "paquettg/php-html-parser": "^2.1"
   },
   "require-dev": {
     "phpunit/phpunit": "~5.2"

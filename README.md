@@ -1,8 +1,15 @@
 # PHP library to check if link is spam
 
-[![Build Status](https://travis-ci.org/limonte/spam-link-analyser.svg?branch=master)](https://travis-ci.org/limonte/spam-link-analyser)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/limonte/spam-link-analyser/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/limonte/spam-link-analyser/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/limonte/spam-link-analyser/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/limonte/spam-link-analyser/?branch=master)
+[![Build Status](https://travis-ci.org/repat/limonte-spam-link-analyser.svg?branch=master)](https://travis-ci.org/repat/limonte-spam-link-analyser)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/repat/limonte-spam-link-analyser/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/repat/limonte-spam-link-analyser/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/repat/limonte-spam-link-analyser/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/repat/limonte-spam-link-analyser/?branch=master)
+
+## Update:
+The underlying `paquettg/php-html-parser` in `^1.7` wasn't PHP 7.3 ready so I forked the project, updated the dependency and reuploaded it.
+
+## Installation:
+
+`composer require repat/limonte-spam-link-analyser`
 
 ## Usage:
 
